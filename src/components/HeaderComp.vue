@@ -1,6 +1,22 @@
 <template>
   <header>
-      <div class="header-top"></div>
+      <div class="header-top pt-2 ">
+          <div class="container d-flex justify-content-between align-items-center">
+              <div class="open-hours">
+              <span><i class="fa-solid fa-clock"></i> Open Hours : Mon-Sat 9:00 - 18:00</span>
+               </div> 
+               <div class="contacts d-flex ">
+                   <span><i class="fa-solid fa-phone"></i> 1 (305) 1234-5678</span>
+                   <span><i class="fa-solid fa-envelope"></i> hello@example.com</span>
+                   <div class="social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                   </div>
+                   
+               </div>
+          </div>
+      </div>
       <div class="header-menu d-flex align-items-center">
           <div class="container d-flex justify-content-between  ">
               <div class="logo">
@@ -8,13 +24,10 @@
                 </div>
                 <div class="menu d-flex">
                     <ul class="d-flex">
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
+                        <li v-for="(link,index) in linkList" :key="`link-${index}`"><a :href="link.href">{{link.nome}}</a></li>
+                        
                     </ul>
-                    <button>bottone</button>
+                    <button>Get in Touch</button>
                 </div>
           </div>
       </div>
@@ -24,6 +37,14 @@
 <script>
 export default {
 name:"HeaderComp",
+
+props:{
+    linkList :Array,
+},
+
+mounted(){
+    console.log(this.linkList);
+}
 }
 </script>
 
@@ -38,6 +59,10 @@ name:"HeaderComp",
      .header-top{
          height: 40px;
          background-color: #21333e;
+         color: #c0c3d0;
+         i{
+             margin: 0 15px;
+         }
      }
 
      .header-menu{
@@ -45,6 +70,7 @@ name:"HeaderComp",
          ul{
              margin-right:20px ;
              list-style: none;
+             padding-top: 10px  ;
              li{
                  padding: 0 30px;
                  text-transform: uppercase;
@@ -59,7 +85,8 @@ name:"HeaderComp",
              padding: 0 30px;
              border-radius: 10px;
              text-transform: uppercase;
-             background-color: blue;
+             background-color: #058283;
+             color: white;
              border: none;
          }
      }
