@@ -7,13 +7,13 @@
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea eaque assumenda labore delectus dolores doloribus error iusto non quas, aperiam quaerat maiores ratione dolore libero officiis alias excepturi, sapiente iste.</p>
           </div>
           <div class="box ">
-              <span></span>
-              <h2>Human Capital</h2>
+              <span><i class="fa-solid fa-briefcase"></i></span>
+              <h2>Core Business</h2>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea eaque assumenda labore delectus dolores doloribus error iusto non quas, aperiam quaerat maiores ratione dolore libero officiis alias excepturi, sapiente iste.</p>
           </div>
           <div class="box ">
-              <span></span>
-              <h2>Human Capital</h2>
+              <span><i class="fa-solid fa-arrows-spin"></i></span>
+              <h2>Performance</h2>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea eaque assumenda labore delectus dolores doloribus error iusto non quas, aperiam quaerat maiores ratione dolore libero officiis alias excepturi, sapiente iste.</p>
           </div>
       </div>
@@ -43,6 +43,10 @@ section{
         border-radius: 10px;
         padding: 15px;
         margin: 0 20px;
+
+        p{
+            color:gray;
+        }
 
         span{
             display: flex;
