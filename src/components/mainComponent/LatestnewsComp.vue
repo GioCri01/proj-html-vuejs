@@ -14,17 +14,17 @@
               </div>
               <div class="col-12 d-flex">
                   <div class="box">
-                      <img  src="../../assets/img/news-1.jpg" alt="">
+                      <img  src="../../assets/img/news-1.jpg" alt="news1">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                       
                   </div>
                   <div class="box">
-                      <img src="../../assets/img/news-2.jpg" alt="">
+                      <img src="../../assets/img/news-2.jpg" alt="news2">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                       
                   </div>
                   <div class="box">
-                      <img src="../../assets/img/news-3.jpg" alt="">
+                      <img src="../../assets/img/news-3.jpg" alt="news3">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                       
                   </div>
