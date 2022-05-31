@@ -20,7 +20,7 @@ export default {
     width: 100%;
     height: 800px;
     
-    background-image: url(../assets/img/Polygon\ Luminary.svg);
+    background-image: url(../assets/img/hero-image.png);
     background-position: center;
     background-size:cover ;
     filter: brightness(0.9);
