@@ -20,6 +20,7 @@ export default {
   .jumbotron{
     width: 100%;
     height: 800px;
+    margin-top: -100px ;
     
     img{
       width: 100%;
