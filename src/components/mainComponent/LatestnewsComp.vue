@@ -14,16 +14,28 @@
               </div>
               <div class="col-12 d-flex">
                   <div class="box">
-                      <img  src="../../assets/img/news-1.jpg" alt="news1">
+                      <div  class="info">
+                          <span>andrea miller</span>
+                          <span> 2 days ago</span>
+                      </div>
+                      <img   src="../../assets/img/news-1.jpg" alt="news1">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                       
                   </div>
-                  <div class="box">
+                  <div  class="box">
+                      <div class="info">
+                          <span>andrea miller</span>
+                          <span> 2 days ago</span>
+                      </div>
                       <img src="../../assets/img/news-2.jpg" alt="news2">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                       
                   </div>
-                  <div class="box">
+                  <div  class="box">
+                      <div  class="info">
+                          <span>andrea miller</span>
+                          <span> 2 days ago</span>
+                      </div>
                       <img src="../../assets/img/news-3.jpg" alt="news3">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                       
@@ -37,6 +49,15 @@
 <script>
 export default {
     name:"LatestnewsComp",
+    data(){
+        return{
+            show: false,
+
+        }
+    },
+    mounted(){
+        console.log(this.show);
+    }
 
 }
 </script>
@@ -92,11 +113,17 @@ section{
         padding: 40px 10px;
         color: #058283;
         position: relative;
+        transition: all 0.3s;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
         
         img{
             width: 100%;
             filter: brightness(0.5);
             border-radius: 10px;
+            position: relative;
             
         }
 
@@ -108,8 +135,23 @@ section{
             font-weight: bold;
             font-size: 20px;
         }
+
+
+        .info{
+            width: 100%;
+            margin: 0 auto;
+            
+            position: absolute;
+            z-index: 997;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            
+            
+        }
         
         }
+        
 }
 
 </style>

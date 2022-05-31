@@ -18,7 +18,9 @@ import ServicesComp from './mainComponent/ServicesComp.vue'
 import PricingComp from './mainComponent/PricingComp.vue'
 import LatestnewsComp from './mainComponent/LatestnewsComp.vue'
 import NewsletterComp from './mainComponent/NewsletterComp.vue'
-import FormComp from './FormComp.vue'
+
+import FormComp from './mainComponent/FormComp.vue'
+
 
 export default {
 name:"MainComp",
@@ -29,6 +31,7 @@ components:{
     PricingComp,
     LatestnewsComp,
     NewsletterComp,
+    
     FormComp
 }
 }

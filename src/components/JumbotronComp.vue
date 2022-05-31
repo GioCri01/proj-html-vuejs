@@ -1,5 +1,6 @@
 <template>
   <div class="jumbotron position-relative">
+    <img src="../assets/img/hero-image.png" alt="">
     <div class="jumbotron-content ">
       <h1>Lead ~ Customer</h1>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut illum sunt similique eum ad praesentium eligendi! Excepturi, cum quibusdam architecto eum accusamus eveniet eaque ea, repellat rerum nulla corrupti iure!</p>
@@ -20,10 +21,12 @@ export default {
     width: 100%;
     height: 800px;
     
-    background-image: url(../assets/img/hero-image.png);
-    background-position: center;
-    background-size:cover ;
-    filter: brightness(0.9);
+    img{
+      width: 100%;
+      height: 800px;
+      object-fit: cover;
+      filter: brightness(0.5);
+    }
 
     p{
       color: #b4b7c2;

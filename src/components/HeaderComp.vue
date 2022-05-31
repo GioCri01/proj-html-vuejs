@@ -18,9 +18,9 @@
           </div>
       </div>
       <div class="header-menu d-flex align-items-center">
-          <div class="container d-flex justify-content-between  ">
+          <div class="container d-flex justify-content-between mt-3 ">
               <div class="logo">
-                <img src="../assets/img/logo_48.png" alt="">
+                <h1><span>Nex</span>Gen</h1>
                 </div>
                 <div class="menu d-flex">
                     <ul class="d-flex">
@@ -54,6 +54,20 @@ mounted(){
      z-index: 999;
      width: 100%;
      height: 120px;
+
+     .logo{
+         h1{
+             color: white;
+         }
+         span{
+             display: inline-block;
+             background-color: #354c50b6 ;
+             color: #01a3a4;
+             padding: 10px 20px;
+             border-radius: 20px 0px 0px 20px;
+             margin-right:2px ;
+         }
+     }
      
 
      .header-top{

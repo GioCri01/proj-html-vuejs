@@ -3,7 +3,9 @@
       <div class="container py-5">
           <div class="row">
               <div class="col-3 offset-1">
-                  <img  class=" mb-3" src="../assets/img/logo_48.png" alt="">
+                  <div class="logo">
+                    <h1><span>Nex</span>Gen</h1>
+                    </div>
                   <p>A Functional HTML . Template for Corporate & Business</p>
                   <ul>
                       <li><i class="fa-solid fa-phone"></i> 1 (305) 1234-5678</li>
@@ -65,6 +67,21 @@ footer{
             }
         }
     }
+
+    .logo{
+        margin-bottom: 20px;
+         h1{
+             color: white;
+         }
+         span{
+             display: inline-block;
+             background-color: #354c50b6 ;
+             color: #01a3a4;
+             padding: 10px 20px;
+             border-radius: 20px 0px 0px 20px;
+             margin-right:2px ;
+         }
+     }
 
     .list-container{
         

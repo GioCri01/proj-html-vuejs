@@ -16,7 +16,7 @@
                       </div>
                       <div class="col-12">
                           <div class="input-container d-flex flex-wrap justify-content-between position-relative">
-                              <img src="../assets/img/image (1).png" alt="">
+                              <img src="../../assets/img/image (1).png" alt="">
                               <input class="form-control " placeholder="Name" type="text">
                               <input class="form-control" placeholder="Phone"   type="text">
                               <input class="form-control" placeholder="Email"   type="text">
